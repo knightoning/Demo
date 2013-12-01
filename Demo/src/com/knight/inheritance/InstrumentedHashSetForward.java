@@ -33,8 +33,7 @@ public class InstrumentedHashSetForward<E> extends ForwardingSet<E>{
     }
 	
 	public static void main(String[] args){
- 	 
-		@SuppressWarnings("unchecked")
+ 	
 		String [] str = {"Snap", "Crackle", "Pop"};
 		Set<String> s= new HashSet<String>();
 		s.add(str[0]);
