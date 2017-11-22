@@ -22,7 +22,7 @@ public class SlideWindowsCountTest {
     static final LoadingCache<Long,AtomicLong> counter =
             CacheBuilder.newBuilder()
                     .maximumSize(100)
-                    .expireAfterWrite(30*1000 -100, TimeUnit.MILLISECONDS)
+                    .expireAfterWrite(30*1000, TimeUnit.MILLISECONDS)
                     .build(new CacheLoader<Long, AtomicLong>() {
                         @Override
                         public AtomicLong load(Long seconds) throws Exception {
