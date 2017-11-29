@@ -22,7 +22,7 @@ public class SlideWindowsCountTest {
     static final LoadingCache<Long,AtomicLong> counter =
             CacheBuilder.newBuilder()
                     .maximumSize(100)
-                    .expireAfterWrite(30*1000, TimeUnit.MILLISECONDS)
+                    .expireAfterWrite(1*1000, TimeUnit.MILLISECONDS)
                     .build(new CacheLoader<Long, AtomicLong>() {
                         @Override
                         public AtomicLong load(Long seconds) throws Exception {
@@ -33,7 +33,7 @@ public class SlideWindowsCountTest {
 
         public static void main(String[] args){
 
-        long limit = 500;
+        long limit = 100;
         ExecutorService executorService = Executors.newFixedThreadPool(10);
 
         //打印形式

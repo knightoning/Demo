@@ -3,6 +3,9 @@ package com.knight.demo.flow;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
+/**
+ * 计数限流
+ */
 public class CountTest {
 
     public static void main(String[] args){
