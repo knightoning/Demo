@@ -33,7 +33,7 @@ public class SlideWindowsCountTest {
 
         public static void main(String[] args){
 
-        long limit = 100;
+        long limit = 20;
         ExecutorService executorService = Executors.newFixedThreadPool(10);
 
         //打印形式
