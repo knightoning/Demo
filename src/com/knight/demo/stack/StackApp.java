@@ -8,6 +8,7 @@ package com.knight.demo.stack;
  * 栈
  *
  * 先进后出
+ *
  * @author hujie
  * @version Id: StackApp.java, v 0.1 2018/1/5 14:20 hujie Exp $$
  */
