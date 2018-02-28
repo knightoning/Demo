@@ -4,6 +4,7 @@
  */
 package com.knight.demo.thread;
 
+import java.util.Date;
 import java.util.Map;
 import java.util.Set;
 
@@ -15,9 +16,9 @@ public class MasterMain {
 
     public static void main(String[] args) {
 
-        Master m = new Master(new PlusWorker(),2);
+        Master m = new Master(new PlusWorker(),10);
 
-        for(int i=1;i<=100;i++){
+        for(int i=1;i<=200;i++){
             m.submit(i);
         }
 
