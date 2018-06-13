@@ -28,7 +28,7 @@ public class RandWeight {
 
         for (int i =0 ; i<10000;i++) { //测试循环
 
-            
+
             List<Weight> weights = new ArrayList<>();
             Random random = new Random();
             Weight w1 = new Weight("172.168.56.1", 10);
