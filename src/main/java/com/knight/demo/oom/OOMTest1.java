@@ -21,7 +21,7 @@ public class OOMTest1 {
     public static void main(String[] args) {
 
         Vector v = new Vector();
-
+                        //10485760
         for(int i=1;i<1000000000;i++){
 
             //此时，所有的Object对象都没有被释放，因为变量v引用这些对象。
@@ -29,6 +29,12 @@ public class OOMTest1 {
             v.add(o);
 
             o= null;
+
+            if(i==10485760){
+                System.gc();
+            }
+
+            System.out.println(i);
         }
     }
 }
