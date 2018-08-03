@@ -56,4 +56,27 @@ public class StackC {
     public boolean isFull(){
         return (top == maxSize -1);
     }
+
+    public int size(){
+        return top +1;
+    }
+
+    public char peekN(int n){
+        return stackArray[n];
+    }
+
+    /**
+     * 打印栈信息
+     * @param s
+     */
+    public void displayStack(String s){
+
+        System.out.print(s);
+        System.out.print("Stack (bottom --> top):");
+        for (int j=0;j<size();j++){
+            System.out.print(peekN(j));
+            System.out.print(" ");
+        }
+        System.out.println(" ");
+    }
 }
