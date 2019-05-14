@@ -16,6 +16,16 @@ public class FormatDemo {
 
         String jobName = "master";
 
-        System.out.println(String.format("/%s/%s",jobName,node));
+        //System.out.println(String.format("/%s/%s",jobName,node));
+
+
+        String str = "<head><root xnmls='ssss'><MsgHeader>sssss</MsgHeader><MsgBody>bbbbb</MsgBody></root>{s:";
+
+        int  startIndex = str.indexOf("<root");
+        int  endIndex = str.indexOf("</root>");
+
+        String dataString = str.substring(startIndex,endIndex+7);
+
+        System.out.println("startIndex:"+startIndex+"endIndex:"+endIndex+"dataString:"+dataString);
     }
 }
